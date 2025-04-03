@@ -8,11 +8,11 @@ import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Eye, EyeOff, Github } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Separator } from "@/components/ui/separator"
+import { Button } from "@/src/ui/button"
+import { Input } from "@/src/ui/input"
+import { Label } from "@/src/ui/label"
+import { Checkbox } from "@/src/ui/checkbox"
+import { Separator } from "@/src/ui/separator"
 
 export function SignupForm() {
     const [isLoading, setIsLoading] = useState(false)
@@ -213,4 +213,3 @@ export function SignupForm() {
         </div>
     )
 }
-

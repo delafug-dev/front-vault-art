@@ -1,4 +1,4 @@
-import RecoveryPassword from "@/components/auth/recovery-password/RecoveryPassword";
+import RecoveryPassword from "@/src/modules/auth/components/recovery-password/RecoveryPassword";
 
 
 const PasswordRecoveryPage = () => {
