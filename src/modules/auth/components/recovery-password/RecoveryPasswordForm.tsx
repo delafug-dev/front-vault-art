@@ -2,10 +2,10 @@
 
 import { useState } from "react"
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Alert, AlertDescription } from "@/components/ui/alert"
+import { Button } from "@/src/ui/button"
+import { Input } from "@/src/ui/input"
+import { Label } from "@/src/ui/label"
+import { Alert, AlertDescription } from "@/src/ui/alert"
 import { AlertCircle, CheckCircle2 } from "lucide-react"
 
 const RecoveryPasswordForm = () => {

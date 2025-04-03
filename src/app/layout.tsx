@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AuthProvider from "@/src/modules/core/providers/SessionProvider";
+import {ThemeProvider} from "@/src/modules/core/providers/ThemeProvider";
+
 
 
 
@@ -14,10 +17,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-      >
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <AuthProvider>
+          <ThemeProvider
+            attribute={"class"}
+            defaultTheme={"system"}
+            enableSystem={true}
+            disableTransitionOnChange={true}
+          >
+            {children}
+          </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );
